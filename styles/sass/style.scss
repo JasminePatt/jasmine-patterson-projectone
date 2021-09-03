@@ -8,13 +8,185 @@
 CSS STYLING STARTS HERE
 ================================ */
 
-/* +++++++++++++++++
-GLOBAL STYLES
-++++++++++++++++++*/
+/* +++++++++++++++++++++++++
+GLOBAL STYLES and TYPOGRAPHY
+++++++++++++++++++++++++++*/
 html {
     font-size: 125%;
+    max-width: 100%;
 }
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, h2, h3, h4, p, li {
+        margin: 0;
+        padding: 0;
+        color: #2C2C2C;;
+}
+
 h1 {
-    color: $blogColor;
+    font-size: 8.3rem;
 }
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.81rem;
+}
+
+h4 {
+    font-size: 2.1rem;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 32px;
+}
+
+span {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background-color: $buttonColor;
+    color: $submitColor;
+    padding: 10px 20px;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* +++++++++++++++++++++++++
+HEADER STYLES
+++++++++++++++++++++++++++*/
+
+.header {
+    background-image: url(.././planted-final-assets/home-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    height: 700px;
+}
+
+h1,
+.logo {
+    color: #F0EFED;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 500;
+    padding: 6px 0;
+    max-width: 55%;
+}
+
+.nav-wrapper {
+        display: flex;
+        padding-left: 10%;
+        max-width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    padding: 0 25px;
+}
+
+
+nav a {
+    color: #F0EFED;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.home {
+    color: $accentColor;
+}
+
+/* H1 STYLE */
+
+.planted-invt {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+h1 {
+    text-align: left;
+    font-weight: 500;
+    line-height: 0.8; 
+    position: relative;
+
+}
+
+h1 span {
+    color: $accentColor;
+}
+
+header img {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    
+}
+
+// Will come back to header stuff later, not making headway
+
+/*+++++++++++++++++++++++
+ABOUT STYLES 
++++++++++++++++++++++++*/
+
+.about-section{
+    background-color: $submitColor;
+}
+
+.about-wrapper {
+    width: 50%;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.about-section h2 {
+    text-align: center;
+}
+
+.about-section p {
+    text-align: center;
+
+}
+
+.about-section button {
+    display: block;
+    margin: 30px auto;
+}
+
+
 
