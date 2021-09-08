@@ -23,7 +23,7 @@ body {
 h1, h2, h3, h4, p, li {
         margin: 0;
         padding: 0;
-        color: #2C2C2C;;
+        color: $blackColor;
 }
 
 h1 {
@@ -67,7 +67,7 @@ button {
     font-family: 'Josefin Sans', sans-serif;
     border: none;
     background-color: $buttonColor;
-    color: $submitColor;
+    color: $whiteColor;
     padding: 14px 30px 10px 30px;
     line-height: 1.6rem;
     letter-spacing: 1px;
@@ -75,32 +75,36 @@ button {
     text-transform: capitalize;
 }
 
+/* ============================================================
+INDEX PAGE STARTS HERE
+============================================================ */
+
 
 /* +++++++++++++++++++++++++
 HEADER STYLES
 ++++++++++++++++++++++++++*/
 
-header {
+.header {
     background-image: url(.././assets/home-image-1.jpg);
     background-position: center;
     background-size: cover;
     padding: 25px;
-    height: 800px;
-    max-width: 100%;
+    height: 90vh;
 }
 
-.header {
+.header-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 
-h1,
-.logo {
-    color: #F0EFED;
-}
+// h1,
+// .logo {
+//     color: #F0EFED;
+// }
 
 nav {
     position: absolute;
@@ -174,19 +178,17 @@ header img {
     max-width: 50%;
 }
 
-// Will come back to header stuff later, not making headway
-
 /*+++++++++++++++++++++++
 ABOUT STYLES 
 +++++++++++++++++++++++*/
 
 .about-section{
-    background-color: $submitColor;
+    background-color: $whiteColor;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 38rem;
+    height: auto;
 }
 
 .about-wrapper {
@@ -241,14 +243,14 @@ ARTICLE SECTION STYLES
     z-index: 1;
 }
 
-.yellow-box-1 {
-    width: 713px;
-    height: 401px;
-    background: #F8E71C;
-    position: relative;
-    top: -427px;
-    left: -10px;
-}
+// .yellow-box-1 {
+//     width: 713px;
+//     height: 401px;
+//     background: #F8E71C;
+//     position: relative;
+//     top: -427px;
+//     left: -10px;
+// }
 
 .unique-cont {
     display: flex;
@@ -271,11 +273,6 @@ ARTICLE SECTION STYLES
     height: 450px;
 }
 
-.work-img{
-    max-width: 100%;
-    height: 450px;
-}
-
 .work-cont {
     display: flex;
     flex-direction: column;
@@ -290,22 +287,24 @@ h4 {
     padding: 15px 0;
 }
 
+.work-img{
+    max-width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .work-img img {
-    right: -282px;
-    bottom: 45px;
-    position: relative;
     z-index: 1;
+    height: auto;
 }
 
 .work-img::after {
     content: "";
     position: absolute;
-    width: 700px;
-    height: 401px;
-    background: #F8E71C;
-    bottom: 420px;
-    right: -251px;
-
+    width: 37%;
+    height: 50%;
+    background: $accentColor;
 }
 
 // .yellow-box-2 {
@@ -322,7 +321,7 @@ SITE CONTENT STYLES
 +++++++++++++++++++++++*/
 
 .site-content {
-    background: $submitColor;
+    background: $whiteColor;
     width: 100%;
     height: auto;
     display: flex;
@@ -365,17 +364,22 @@ img-banner {
 FOUNDER SECTION STYLES 
 +++++++++++++++++++++++*/
 .founder-section {
-    background: $submitColor;
-    padding: 100px 100px;
-
+    background: $whiteColor;
+    padding: 2% 2%;
 }
 
 .founder-wrapper {
+    height: auto;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .founder-img {
     max-width: 40%;
+    padding: 3%;
+    height: 404px;
+    margin: 5% 5%;
 }
 
 .founder-img img {
@@ -395,8 +399,7 @@ FOUNDER SECTION STYLES
 
 .abt-founder {
 max-width: 60%;
-margin: 0 auto;
-padding: 80px 30px;
+padding-right: 10%;
 }
 
 .abt-founder h3,
@@ -408,5 +411,73 @@ padding: 80px 30px;
     margin: 25px 0;
 }
 
+/*+++++++++++++++++++++++
+GALLERY STYLES 
++++++++++++++++++++++++*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    margin: 6% 1%;  
+}
 
 
+/*+++++++++++++++++++++++
+FOOTER STYLES 
++++++++++++++++++++++++*/
+
+footer {
+    background: $blackColor;
+
+}
+
+footer p {
+    color: $whiteColor;
+    text-align: center;
+    padding: 0.3% 0;
+}
+
+/* ============================================================
+BLOG PAGE STARTS HERE
+============================================================ */
+
+/*+++++++++++++++++++++++
+HEADER STYLES 
++++++++++++++++++++++++*/
+
+.blog-header {
+    background-image: url(.././assets/blog-header-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 30vh;
+    height: auto;
+}
+
+/*+++++++++++++++++++++++
+ABOUT BLOG STYLES 
++++++++++++++++++++++++*/
+
+.blog {
+    display: flex;
+}
+.blog-abt-section {
+    display: flex;
+    max-width: 30%;
+}
+
+.blog-abt-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-section {
+    display: flex;
+    flex-direction: column;
+}
+/* ============================================================
+CONTACT PAGE STARTS HERE
+============================================================ */
