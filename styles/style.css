@@ -261,7 +261,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h3 {
@@ -298,23 +298,39 @@ button {
   border: none;
   background-color: #0E902D;
   color: #F0EFED;
-  padding: 10px 20px;
+  padding: 14px 30px 10px 30px;
   line-height: 1.6rem;
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: capitalize;
-  text-align: center;
 }
 
 /* +++++++++++++++++++++++++
 HEADER STYLES
 ++++++++++++++++++++++++++*/
-.header {
-  background-image: url(.././planted-final-assets/home-image-1.jpg);
+header {
+  background-image: url(.././assets/home-image-1.jpg);
   background-position: center;
   background-size: cover;
-  padding: 20px;
-  height: 700px;
+  padding: 25px;
+  height: 800px;
+  max-width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1,
@@ -322,19 +338,27 @@ h1,
   color: #F0EFED;
 }
 
+nav {
+  position: absolute;
+  top: 0.5rem;
+  left: 8rem;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 5rem;
+}
+
+.nav-wrapper {
+  padding-left: 10%;
+  max-width: 100%;
+}
+
 .logo {
   font-size: 2.2rem;
   font-weight: 500;
   padding: 6px 0;
-  max-width: 55%;
-}
-
-.nav-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 10%;
-  max-width: 100%;
+  max-width: 25%;
 }
 
 nav ul {
@@ -372,20 +396,18 @@ nav a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
+  position: relative;
 }
 
 h1 {
   text-align: left;
   font-weight: 500;
   line-height: 0.8;
-  position: relative;
+  z-index: 1;
+  max-width: 100%;
 }
 
 h1 span {
@@ -395,7 +417,8 @@ h1 span {
 header img {
   position: absolute;
   right: 0;
-  top: 200px;
+  bottom: 0;
+  max-width: 50%;
 }
 
 /*+++++++++++++++++++++++
@@ -403,11 +426,24 @@ ABOUT STYLES
 +++++++++++++++++++++++*/
 .about-section {
   background-color: #F0EFED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 38rem;
 }
 
 .about-wrapper {
-  width: 50%;
-  margin: 0 auto;
+  max-width: 70%;
   padding: 150px 0;
 }
 
@@ -417,9 +453,235 @@ ABOUT STYLES
 
 .about-section p {
   text-align: center;
+  margin: 15px 0;
 }
 
 .about-section button {
   display: block;
   margin: 30px auto;
+}
+
+/*+++++++++++++++++++++++
+ARTICLE SECTION STYLES 
++++++++++++++++++++++++*/
+.article-section {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+}
+
+.article-section button {
+  margin: 20px 0;
+}
+
+.unique-plants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50%;
+}
+
+.unique-img {
+  max-width: 100%;
+  height: 450px;
+}
+
+.unique-img img {
+  top: -50px;
+  position: relative;
+  z-index: 1;
+}
+
+.yellow-box-1 {
+  width: 713px;
+  height: 401px;
+  background: #F8E71C;
+  position: relative;
+  top: -427px;
+  left: -10px;
+}
+
+.unique-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5% 20%;
+}
+
+.unique-cont p {
+  text-align: right;
+  padding: 3% 0;
+}
+
+.workshops {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 50%;
+  height: 450px;
+}
+
+.work-img {
+  max-width: 100%;
+  height: 450px;
+}
+
+.work-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5% 20%;
+}
+
+.work-cont p,
+h4 {
+  text-align: left;
+  padding: 15px 0;
+}
+
+.work-img img {
+  right: -282px;
+  bottom: 45px;
+  position: relative;
+  z-index: 1;
+}
+
+.work-img::after {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 401px;
+  background: #F8E71C;
+  bottom: 420px;
+  right: -251px;
+}
+
+/*+++++++++++++++++++++++
+SITE CONTENT STYLES 
++++++++++++++++++++++++*/
+.site-content {
+  background: #F0EFED;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 160px 100px 20px 100px;
+}
+
+.green-house,
+.file-blog,
+.community-content,
+.in-touch {
+  display: inline-block;
+  max-width: 45%;
+  margin: 15px;
+}
+
+.site-content i {
+  background: #F8E71C;
+  border: 10px solid #F8E71C;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin: 0 25px;
+}
+
+.green-house p,
+.file-blog p,
+.community-content p,
+.in-touch p {
+  padding-left: 100px;
+}
+
+img-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-banner img {
+  width: 100%;
+  height: auto;
+}
+
+/*+++++++++++++++++++++++
+FOUNDER SECTION STYLES 
++++++++++++++++++++++++*/
+.founder-section {
+  background: #F0EFED;
+  padding: 100px 100px;
+}
+
+.founder-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.founder-img {
+  max-width: 40%;
+}
+
+.founder-img img {
+  max-width: 100%;
+}
+
+.yellow-box-3 {
+  width: 304px;
+  height: 304px;
+  background: #F8E71C;
+  position: relative;
+  bottom: 286px;
+  left: 26px;
+  z-index: -1;
+}
+
+.abt-founder {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 80px 30px;
+}
+
+.abt-founder h3,
+.abt-founder p {
+  padding: 15px 0;
+}
+
+.abt-founder button {
+  margin: 25px 0;
 }
