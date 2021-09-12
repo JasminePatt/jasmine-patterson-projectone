@@ -1,79 +1,17 @@
 @import 'setup';
 @import 'vars';
-
+/* +++++++++++++++++++++++++
+GLOBAL STYLES and TYPOGRAPHY
+++++++++++++++++++++++++++*/
 // font-family: 'Josefin Sans', sans-serif;
 // font-family: 'Roboto', sans-serif;
+@import 'global';
 
 /* ================================
 CSS STYLING STARTS HERE
 ================================ */
-
-/* +++++++++++++++++++++++++
-GLOBAL STYLES and TYPOGRAPHY
-++++++++++++++++++++++++++*/
-html {
-    font-size: 125%;
-    max-width: 100%;
-}
-
-body {
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-h1, h2, h3, h4, p, li {
-        margin: 0;
-        padding: 0;
-        color: $blackColor;
-}
-
-h1 {
-    font-size: 8.3rem;
-}
-
-h2 {
-    font-size: 3.5rem;
-}
-
-h3 {
-    font-size: 2.81rem;
-}
-
-h4 {
-    font-size: 2.1rem;
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    line-height: 32px;
-}
-
-span {
-    display: block;
-}
-
-img {
-    max-width: 100%;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-button {
-    font-family: 'Josefin Sans', sans-serif;
-    border: none;
-    background-color: $buttonColor;
-    color: $whiteColor;
-    padding: 14px 30px 10px 30px;
-    line-height: 1.6rem;
-    letter-spacing: 1px;
-    font-weight: bold;
-    text-transform: capitalize;
-}
+@import 'nav';
+@import 'button';
 
 /* ============================================================
 INDEX PAGE STARTS HERE
@@ -83,73 +21,21 @@ INDEX PAGE STARTS HERE
 /* +++++++++++++++++++++++++
 HEADER STYLES
 ++++++++++++++++++++++++++*/
+.hero-img{
+    position: relative;
+	background-image: url(.././assets/home-image-1.jpg);
+	width: 100%;
+	height: 95vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+    z-index: -1;
 
-.header {
-    background-image: url(.././assets/home-image-1.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 25px;
-    height: 90vh;
-}
-
-.header-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
 }
 
 
-// h1,
-// .logo {
-//     color: #F0EFED;
-// }
-
-nav {
-    position: absolute;
-    top: 0.5rem;
-    left: 8rem;
-    max-width: 100%;
-    display: flex;
-    padding: 0.5rem 5rem;
-}
-
-.nav-wrapper {
-    padding-left: 10%;
-    max-width: 100%;       
-}
-
-.logo {
-    font-size: 2.2rem;
-    font-weight: 500;
-    padding: 6px 0;
-    max-width: 25%;
-}
-
-nav ul {
-    padding: 0;
-    width: 45%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav li {
-    padding: 0 25px;
-}
-
-
-nav a {
-    color: #F0EFED;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.home {
-    color: $accentColor;
-}
-
-/* H1 STYLE */
+// /* H1 STYLE */
 
 .planted-invt {
     max-width: 100%;
@@ -168,14 +54,8 @@ h1 {
 }
 
 h1 span {
+    display: block;
     color: $accentColor;
-}
-
-header img {
-    position: absolute; 
-    right: 0;
-    bottom: 0;
-    max-width: 50%;
 }
 
 /*+++++++++++++++++++++++
@@ -432,14 +312,13 @@ FOOTER STYLES
 
 footer {
     background: $blackColor;
-
+    p {
+        color: $whiteColor;
+        text-align: center;
+        padding: 0.3% 0;
+    }
 }
 
-footer p {
-    color: $whiteColor;
-    text-align: center;
-    padding: 0.3% 0;
-}
 
 /* ============================================================
 BLOG PAGE STARTS HERE
@@ -481,3 +360,137 @@ ABOUT BLOG STYLES
 /* ============================================================
 CONTACT PAGE STARTS HERE
 ============================================================ */
+
+
+.contact-hero-img {
+    border-top: 80px solid $navColor;
+    background-image: url(../assets/contact-header-1.jpg);
+    width: 100%;
+	height: 75vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+
+    h2{
+        color: $accentColor;
+        position: relative;
+        left: 10.5%;
+        bottom:6%;
+        max-width: 15%;
+        font-size: 4.5rem;
+    }
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: row;
+    background-color: $whiteColor;
+    padding: 8% 9%;
+}
+
+.social {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+        i {
+            padding-right: 18px;
+            color: $buttonColor;
+        }
+}
+
+.contact-info {
+    line-height: 1.6rem;
+}
+
+.email {
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.contact-form-wrapper{
+    position: absolute;
+    bottom: -10%;
+    right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    .contact-form {
+        background-color: $baseWhite;
+        padding: 50px 50px 0 50px;
+        box-shadow: -40px 40px 0 -15px $accentColor;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0 0;
+            li {
+                display: flex;
+            }
+        }
+    }
+}
+
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid $buttonColor;
+    color: #9b948b;
+    padding: 0 0 20px 20px;
+}
+
+label {
+    margin-right: 5px;
+}
+
+
+textarea {
+    border: 2px solid $buttonColor;
+    color: #9b948b;
+    text-align: left;
+    width: 100%;
+    padding: 35px 20px;
+    resize: none;
+}
+
+
+
+
+label[for="message"] {
+	display: inline-block;
+	width: 100%;
+    margin: 30px 0;
+}
+
+input[type="submit"] {
+	margin: 50px 0;
+    max-width: 100%;
+}
+
+
+
+
+/* ============================================================
+MEDIA QUERIES
+============================================================ */
+@media (max-width: 1350px) {
+}
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 720px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

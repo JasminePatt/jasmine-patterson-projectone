@@ -235,9 +235,6 @@ html {
   overflow: hidden;
 }
 
-/* ================================
-CSS STYLING STARTS HERE
-================================ */
 /* +++++++++++++++++++++++++
 GLOBAL STYLES and TYPOGRAPHY
 ++++++++++++++++++++++++++*/
@@ -248,6 +245,9 @@ html {
 
 body {
   font-family: "Josefin Sans", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
 }
 
 h1, h2, h3, h4, p, li {
@@ -272,13 +272,9 @@ h4 {
   font-size: 2.1rem;
 }
 
-p {
+p, input, label {
   font-family: "Roboto", sans-serif;
-  line-height: 32px;
-}
-
-span {
-  display: block;
+  line-height: 1.6rem;
 }
 
 img {
@@ -293,7 +289,56 @@ li {
   list-style: none;
 }
 
-button {
+/* ================================
+CSS STYLING STARTS HERE
+================================ */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 11%;
+  position: absolute;
+  margin: 0.5% 0;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5px;
+}
+nav ul li {
+  padding: 0 8%;
+}
+nav ul li a {
+  color: #F0EFED;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #F0EFED;
+  font-weight: 400;
+}
+
+.home,
+.blog,
+.contact {
+  color: #F8E71C;
+}
+
+a:active {
+  color: #F8E71C;
+}
+
+button,
+.button {
   font-family: "Josefin Sans", sans-serif;
   border: none;
   background-color: #0E902D;
@@ -311,80 +356,18 @@ INDEX PAGE STARTS HERE
 /* +++++++++++++++++++++++++
 HEADER STYLES
 ++++++++++++++++++++++++++*/
-.header {
+.hero-img {
+  position: relative;
   background-image: url(.././assets/home-image-1.jpg);
-  background-position: center;
+  width: 100%;
+  height: 95vh;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 25px;
-  height: 90vh;
+  background-position: center center;
+  text-align: center;
+  z-index: -1;
 }
 
-.header-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-}
-
-nav {
-  position: absolute;
-  top: 0.5rem;
-  left: 8rem;
-  max-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0.5rem 5rem;
-}
-
-.nav-wrapper {
-  padding-left: 10%;
-  max-width: 100%;
-}
-
-.logo {
-  font-size: 2.2rem;
-  font-weight: 500;
-  padding: 6px 0;
-  max-width: 25%;
-}
-
-nav ul {
-  padding: 0;
-  width: 45%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-nav li {
-  padding: 0 25px;
-}
-
-nav a {
-  color: #F0EFED;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.home {
-  color: #F8E71C;
-}
-
-/* H1 STYLE */
 .planted-invt {
   max-width: 100%;
   display: -webkit-box;
@@ -409,14 +392,8 @@ h1 {
 }
 
 h1 span {
+  display: block;
   color: #F8E71C;
-}
-
-header img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: 50%;
 }
 
 /*+++++++++++++++++++++++
@@ -710,7 +687,6 @@ FOOTER STYLES
 footer {
   background: #2C2C2C;
 }
-
 footer p {
   color: #F0EFED;
   text-align: center;
@@ -770,3 +746,142 @@ ABOUT BLOG STYLES
 /* ============================================================
 CONTACT PAGE STARTS HERE
 ============================================================ */
+.contact-hero-img {
+  border-top: 80px solid #000000;
+  background-image: url(../assets/contact-header-1.jpg);
+  width: 100%;
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.contact-hero-img h2 {
+  color: #F8E71C;
+  position: relative;
+  left: 10.5%;
+  bottom: 6%;
+  max-width: 15%;
+  font-size: 4.5rem;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #F0EFED;
+  padding: 8% 9%;
+}
+
+.social {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 15px;
+}
+.social i {
+  padding-right: 18px;
+  color: #0E902D;
+}
+
+.contact-info {
+  line-height: 1.6rem;
+}
+
+.email {
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.contact-form-wrapper {
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.contact-form-wrapper .contact-form {
+  background-color: #ffffff;
+  padding: 50px 50px 0 50px;
+  -webkit-box-shadow: -40px 40px 0 -15px #F8E71C;
+          box-shadow: -40px 40px 0 -15px #F8E71C;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60vw;
+}
+.contact-form-wrapper .contact-form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0 0;
+}
+.contact-form-wrapper .contact-form ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid #0E902D;
+  color: #9b948b;
+  padding: 0 0 20px 20px;
+}
+
+label {
+  margin-right: 5px;
+}
+
+textarea {
+  border: 2px solid #0E902D;
+  color: #9b948b;
+  text-align: left;
+  width: 100%;
+  padding: 35px 20px;
+  resize: none;
+}
+
+label[for=message] {
+  display: inline-block;
+  width: 100%;
+  margin: 30px 0;
+}
+
+input[type=submit] {
+  margin: 50px 0;
+  max-width: 100%;
+}
+
+/* ============================================================
+MEDIA QUERIES
+============================================================ */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
