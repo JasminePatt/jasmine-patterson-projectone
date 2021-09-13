@@ -79,7 +79,7 @@ ABOUT STYLES
         .about-wrapper {
             max-width: 70%;
             padding: 150px 0;
-    }
+        }
 }
 
 
@@ -101,12 +101,11 @@ ABOUT STYLES
 ARTICLE SECTION STYLES 
 +++++++++++++++++++++++*/
 
-.info-section {
+.info-wrapper {
     background-color: white;
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: inherit;
         button {
             margin: 20px 0;
         }
@@ -115,7 +114,6 @@ ARTICLE SECTION STYLES
 .unique-plants {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
     .unique-img {
         max-width: 100%;
         height: 450px;
@@ -129,14 +127,11 @@ ARTICLE SECTION STYLES
 }
 
 
-
-
 .unique-cont {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    // padding: 70px 200px;
     padding: 5% 20%;
         p {
         text-align: right;
@@ -164,7 +159,6 @@ ARTICLE SECTION STYLES
 }
 
 
-
 .work-img{
     max-width: 100%;
     height: 450px;
@@ -188,17 +182,17 @@ SITE CONTENT STYLES
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 160px 100px 20px 100px;
+    padding: 160px 100px 160px 100px;
+        .green-house,
+        .file-blog,
+        .community-content,
+        .in-touch {
+            display: inline-block;
+            max-width: 45%;
+            margin: 15px;
+    }
 }
 
-.green-house,
-.file-blog,
-.community-content,
-.in-touch {
-    display: inline-block;
-    max-width: 45%;
-    margin: 15px;
-}
 .site-content i{
     background: $accentColor;
     border: 10px solid $accentColor;
@@ -220,55 +214,44 @@ img-banner {
 .img-banner img {
     width: 100%;
     height: auto;
+    
 }
 
 /*+++++++++++++++++++++++
 FOUNDER SECTION STYLES 
 +++++++++++++++++++++++*/
+
 .founder-section {
     background: $whiteColor;
     padding: 2% 2%;
+        .founder-wrapper {
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
 }
 
-.founder-wrapper {
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
 
 .founder-img {
-    max-width: 40%;
     padding: 3%;
-    height: 404px;
     margin: 5% 5%;
-}
-
-.founder-img img {
-    max-width: 100%;
-}
-
-.yellow-box-3 {
-    width: 304px;
-    height: 304px;
-    background: $accentColor;
-    position: relative;
-    bottom: 286px;
-    left: 26px;
-    z-index: -1;
-
+        img {
+        height: auto;
+        max-width: 100%;
+        box-shadow: 30px 30px 0 -5px $accentColor;
+    }
 }
 
 .abt-founder {
 max-width: 60%;
 padding-right: 10%;
+    h3, p {
+        padding: 15px 0;
+    }
 }
 
-.abt-founder h3,
-.abt-founder p {
-    padding: 15px 0;
 
-}
 .abt-founder button {
     margin: 25px 0;
 }
@@ -281,12 +264,10 @@ GALLERY STYLES
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+        img {
+        margin: 6% 1%;  
+        }
 }
-
-.gallery img {
-    margin: 6% 1%;  
-}
-
 
 /*+++++++++++++++++++++++
 FOOTER STYLES 
@@ -310,17 +291,33 @@ BLOG PAGE STARTS HERE
 HEADER STYLES 
 +++++++++++++++++++++++*/
 
-.blog-header {
-    background-image: url(.././assets/blog-header-1.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 30vh;
-    height: auto;
+.blog-hero-img {
+    border-top: 80px solid $navColor;
+    background-image: url(../assets/blog-header-1.jpg);
+    width: 100%;
+	height: 75vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+    display: flex;
+    align-items: flex-end;
+        h2{
+            color: $accentColor;
+            position: relative;
+            left: 10.5%;
+            bottom:6%;
+            max-width: 15%;
+            font-size: 4.5rem;
+        }
 }
 
-/*+++++++++++++++++++++++
-ABOUT BLOG STYLES 
-+++++++++++++++++++++++*/
+.post-img-wrapper img {
+        max-width: 100%;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        box-shadow: -40px 40px 0 -10px $accentColor;
+    }
 
 .blog {
     display: flex;
@@ -333,6 +330,9 @@ ABOUT BLOG STYLES
 .blog-abt-wrapper {
     display: flex;
     flex-direction: column;
+        img {
+            
+        }
 }
 
 .article-section {

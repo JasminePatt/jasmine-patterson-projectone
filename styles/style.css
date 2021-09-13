@@ -445,17 +445,15 @@ ABOUT STYLES
 /*+++++++++++++++++++++++
 ARTICLE SECTION STYLES 
 +++++++++++++++++++++++*/
-.info-section {
+.info-wrapper {
   background-color: white;
   width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: inherit;
-      flex-wrap: inherit;
 }
-.info-section button {
+.info-wrapper button {
   margin: 20px 0;
 }
 
@@ -467,7 +465,6 @@ ARTICLE SECTION STYLES
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 50%;
 }
 .unique-plants .unique-img {
   max-width: 100%;
@@ -564,13 +561,12 @@ SITE CONTENT STYLES
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 160px 100px 20px 100px;
+  padding: 160px 100px 160px 100px;
 }
-
-.green-house,
-.file-blog,
-.community-content,
-.in-touch {
+.site-content .green-house,
+.site-content .file-blog,
+.site-content .community-content,
+.site-content .in-touch {
   display: inline-block;
   max-width: 45%;
   margin: 15px;
@@ -609,8 +605,7 @@ FOUNDER SECTION STYLES
   background: #F0EFED;
   padding: 2% 2%;
 }
-
-.founder-wrapper {
+.founder-section .founder-wrapper {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,33 +619,21 @@ FOUNDER SECTION STYLES
 }
 
 .founder-img {
-  max-width: 40%;
   padding: 3%;
-  height: 404px;
   margin: 5% 5%;
 }
-
 .founder-img img {
+  height: auto;
   max-width: 100%;
-}
-
-.yellow-box-3 {
-  width: 304px;
-  height: 304px;
-  background: #F8E71C;
-  position: relative;
-  bottom: 286px;
-  left: 26px;
-  z-index: -1;
+  -webkit-box-shadow: 30px 30px 0 -5px #F8E71C;
+          box-shadow: 30px 30px 0 -5px #F8E71C;
 }
 
 .abt-founder {
   max-width: 60%;
   padding-right: 10%;
 }
-
-.abt-founder h3,
-.abt-founder p {
+.abt-founder h3, .abt-founder p {
   padding: 15px 0;
 }
 
@@ -671,7 +654,6 @@ GALLERY STYLES
       -ms-flex-pack: center;
           justify-content: center;
 }
-
 .gallery img {
   margin: 6% 1%;
 }
@@ -694,17 +676,39 @@ BLOG PAGE STARTS HERE
 /*+++++++++++++++++++++++
 HEADER STYLES 
 +++++++++++++++++++++++*/
-.blog-header {
-  background-image: url(.././assets/blog-header-1.jpg);
-  background-position: center;
+.blog-hero-img {
+  border-top: 80px solid #000000;
+  background-image: url(../assets/blog-header-1.jpg);
+  width: 100%;
+  height: 75vh;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding: 30vh;
-  height: auto;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.blog-hero-img h2 {
+  color: #F8E71C;
+  position: relative;
+  left: 10.5%;
+  bottom: 6%;
+  max-width: 15%;
+  font-size: 4.5rem;
 }
 
-/*+++++++++++++++++++++++
-ABOUT BLOG STYLES 
-+++++++++++++++++++++++*/
+.post-img-wrapper img {
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  -webkit-box-shadow: -40px 40px 0 -10px #F8E71C;
+          box-shadow: -40px 40px 0 -10px #F8E71C;
+}
+
 .blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,7 +731,6 @@ ABOUT BLOG STYLES
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .article-section {
   display: -webkit-box;
   display: -ms-flexbox;
