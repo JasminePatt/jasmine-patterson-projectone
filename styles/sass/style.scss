@@ -314,34 +314,44 @@ HEADER STYLES
 
 .blog-main {
     background-color: $whiteColor;
-    padding: 7rem 0;
+    padding: 7rem 0 3rem 0;
     display: flex;
     justify-content: space-between;
 }
 
 .blog-abt-section {
     flex: 1;
-    .blog-abt-wrapper {
+    margin-right: 30px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         img {
             position: absolute;
             align-self: flex-start;
-            top: 85%;
-            width: 33%;
+            top: 95%;
+            width: 31%;
+            left: 0;
         }
-    }
 }
 
 .blog-abt-content {
     background-color: $baseWhite;
-    padding: 510px 20px 20px 20px;
-    width: 60%;
+    padding: 20px 20px;
+    width: 75%;
+    align-self: flex-end;
+    margin-top: 350px;
+    margin-top: 85%;
+        h5 {
+        padding: 10px 0;
+        margin: 0;
+        font-size: 1rem;
+        
+    }
 }
 
 .abt-planted {
     padding-right: 10px;
+    padding-bottom: 10%;
     .find-out-more {
         color: $blogColor;
         font-weight: bold;
@@ -349,12 +359,6 @@ HEADER STYLES
     }
 }
 
-.blog-abt-wrapper h5 {
-    padding: 10px 0;
-    margin: 0;
-    font-size: 1.2rem;
-    
-}
 
 .recent-posts {
     ul li::before {
@@ -363,12 +367,13 @@ HEADER STYLES
         display: inline-block; 
         width: 1em; 
         margin-left: -1em; 
+        padding: 5px 0;
     }
 }
 
 .article-section {
     flex: 2;
-    margin-left: 120px;
+    margin-left: 50px;
     box-shadow: -40px 40px 0 -35px $accentColor;
         img {
                 width: 100%;
@@ -381,7 +386,76 @@ HEADER STYLES
             position: relative;
             top: -295px;            
             padding-left: 50px;
+            padding-right: 20%;
+            display: inline-block;
+                .blog-article {
+                    margin-top: 70px;
+                }
+                .blog-date {
+                    color: $blogColor;
+                    font-style: italic;
+                }
         }
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    background-color: $whiteColor;
+    position: relative;
+    align-items: flex-end;
+    padding: 30px;
+    .comment-wrapper {
+        width: 65%;
+        padding-right: 10%;
+        .comment1, .comment2 { 
+            display: flex;
+            padding: 30px;
+    }
+        img {
+            padding: 3px 20px;
+        }
+    }
+}
+
+.comment1-content,
+.comment2-content {
+    flex: 2;
+}
+.comment1 h6,
+.comment2 h6{
+    color: $blogColor;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.blog-comment-wrapper {
+    width: 60%;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 0;
+        li {
+            display: flex;
+        }
+    }
+}
+
+.blog-form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px 0 0px;
+    input[type=text],
+    textarea {
+        background-color: $whiteColor;
+    }
+    input .button {
+        margin: 50px 0;
+        max-width: 100%;
+    }
+    
 }
 
 
