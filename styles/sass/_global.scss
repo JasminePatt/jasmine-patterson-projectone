@@ -1,0 +1,51 @@
+html {
+    font-size: 125%;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+}
+
+h2, h3, h4, p, li {
+        margin: 0;
+        padding: 0;
+        color: $blackColor;
+}
+
+h1 {
+    font-size: 8.3rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 2.81rem;
+}
+
+h4 {
+    font-size: 2.1rem;
+}
+
+p, input, label {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
