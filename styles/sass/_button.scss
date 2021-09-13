@@ -1,0 +1,12 @@
+button,
+.button {
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background-color: $buttonColor;
+    color: $whiteColor;
+    padding: 14px 30px 10px 30px;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
