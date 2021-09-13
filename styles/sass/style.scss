@@ -376,7 +376,7 @@ HEADER STYLES
     margin-left: 50px;
     box-shadow: -40px 40px 0 -35px $accentColor;
         img {
-                width: 100%;
+                width: 97.5%;
                 position: relative;
                 bottom: 400px;
                 margin-left: 30px;
@@ -579,19 +579,230 @@ input[type="submit"] {
 /* ============================================================
 MEDIA QUERIES
 ============================================================ */
-@media (max-width: 1350px) {
+
+@media (max-width: 1400px) {
+    .contact-section {
+        padding: 8% 4%;
+    }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
+    .contact-hero-img h2 {
+        left: 6%;
+        bottom: 20%;
+    }
+
+    .contact-wrapper{
+        width:20%;
+    }
+    .article-section img {
+        width: 96.1%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .contact-section {
+        padding: 8% 0;
+    }
+
+    .contact-hero-img h2 {
+        left: 4%;
+        bottom: 46%;
+    }
+
 }
 
 @media (max-width: 940px) {
+
+    .comment-section .comment-wrapper {
+        width: 100%;
+    }
+
+    .blog-comment-wrapper {
+        width: 100%;
+    }
+
+    .blog-form {
+        padding: 50px 30px;
+    }
+
+    .contact-section {
+        padding: 50% 0 0 0;
+    }
+
+    .contact-wrapper{
+        width: 100%;
+        font-size: 2rem;
+        
+    }
+
+    .contact-form-wrapper .contact-form {
+        width: 80vw;
+    }
+
+    .contact-info li {
+        padding: 10px 0;
+    }
+
+    .blog-hero-img h2 {
+        bottom: 70%;
+    }
+
+    .blog-main {
+        flex-direction: column-reverse;
+    }
+
+    .blog-abt-content {
+        display: none;
+    }
+
+    .blog-abt-section img {
+        top: 288%;
+        width: 100%;
+    }
+
+    .article-section img {
+        width: 96.5%;
+        margin-left: 0;
+    }
 }
 
+
+
 /* Landscape phone to portrait tablet */
-@media (max-width: 720px) {
+@media (max-width: 800px) {
+    .hamburger-menu {
+        visibility: visible;
+        display: block;
+    }
+    nav {
+        margin:3% 0
+    }
+
+    .main-nav,
+    .blog-nav,
+    .contact-nav {
+        width: 100%
+    }
+    .nav-items, .blog-nav-items, .contact-nav-items {
+        display: none;
+    }
+
+    .hero-img {
+        height: 60vh;
+            h1 {
+                font-size: 7rem;
+            }
+    }
+
+    .site-content {
+        padding:10px 10px 10px 10px
+    }
+
+    .contact-form-wrapper {
+        width: 100%;
+        .contact-form ul {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .hero-img {
+        height: 55vh;
+            h1 {
+                font-size: 515%;
+            }
+    }
+    
+    .info-wrapper {
+        flex-direction: column;
+    }
+
+    .unique-plants .unique-img {
+        height: auto;
+    }
+
+    .unique-cont {
+        padding: 1% 8%;
+    }
+
+    .workshops {
+        max-width: 100%;
+        height: auto;
+        .work-cont {
+            padding: 1% 8%;
+        }
+    }
+
+    .site-content {
+        padding: 44px 10px 10px 10px;
+    }
+
+    .site-content .green-house, 
+    .site-content .file-blog, 
+    .site-content .community-content, 
+    .site-content .in-touch {
+        display: inline-block;
+        max-width: 95%;
+        margin: 15px;
+    }
+    .founder-section .founder-wrapper {
+        flex-direction: column;
+        .abt-founder {
+            padding-right: 0;
+            max-width: 80%;
+        }
+    }
+    .blog-abt-section img {
+        top: 327%;
+    }
+
+    .article-section .article {
+        padding-left: 3%;
+    }
+
+    .comment-section .comment-wrapper .comment1, 
+    .comment-section .comment-wrapper .comment2 {
+        flex-direction: column;
+    }
+    .blog-comment-wrapper {
+        width: 100%;
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    .img1-container img, 
+    .img2-container img {
+        width: 30vw;
+    }
+
+    .blog-form {
+        padding: 50px 0px;
+    }
+
+    .contact-section {
+        padding: 8% 0;
+    }
+
+    .contact-wrapper {
+        padding-top: 300px;
+    }
+    
+    .contact-form {
+        box-shadow: none;
+    }
+        
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
+    .hero-img h1 {
+            font-size: 450%;
+    }
+
+    
+
 }
