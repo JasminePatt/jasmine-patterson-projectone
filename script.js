@@ -1,4 +1,3 @@
-// User clicks on the hamburger menu
-    // Will need an event listener for the user's click 
-//  When the user clicks, menu opens
-    // Drop-down of all the pages
+// WELCOME MODAL
+// When user visit home page, pop up modal greeting them to the website appears
+// They clica  button and it appears/disappears
