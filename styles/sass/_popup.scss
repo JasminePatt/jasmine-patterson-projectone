@@ -1,0 +1,50 @@
+.modal-btn {
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background-color: $buttonColor;
+    color: $whiteColor;
+    padding: 14px 30px 10px 30px;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 5px -8px 0 5px #F8E71C;
+}
+
+.modal {
+    display: none;
+    position: sticky; 
+    z-index: 1; 
+    right: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: #000000;
+    background-color: #00000066; 
+}
+
+.modal-content {
+    background-color: $baseWhite;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 4px solid $buttonColor;
+    border-radius: 10% 10%;
+    width: 70%; 
+    box-shadow: 30px 30px 0 -5px $accentColor;
+}
+
+
+.close-btn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+}
