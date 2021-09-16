@@ -385,15 +385,15 @@ button,
 
 .modal-box {
   display: none;
-  position: sticky;
+  position: fixed;
   z-index: 1;
   right: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #000000;
-  background-color: #00000066;
+  background-color: #eb0a0a;
+  background-color: #0000002d;
 }
 
 .modal-header {
@@ -417,7 +417,7 @@ button,
 }
 
 .close-btn {
-  color: #aaaaaa;
+  color: #fff9c6d2;
   float: right;
   font-size: 1.8rem;
   font-weight: bold;
@@ -505,7 +505,7 @@ ABOUT STYLES
 }
 .about-section .about-wrapper {
   max-width: 70%;
-  padding: 150px 0;
+  padding: 100px 0;
 }
 
 .about-section h2 {
